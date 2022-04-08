@@ -1,0 +1,13 @@
+
+platform :ios, '11.0'
+inhibit_all_warnings!
+
+target 'Example' do
+  use_frameworks!
+  
+  # @strongify @weakify
+  pod 'libextobjc'
+  pod 'Masonry'
+  pod 'LXMRow', :path => '../'
+  
+end

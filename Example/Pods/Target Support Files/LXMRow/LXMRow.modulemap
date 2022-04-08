@@ -1,0 +1,6 @@
+framework module LXMRow {
+  umbrella header "LXMRow-umbrella.h"
+
+  export *
+  module * { export * }
+}

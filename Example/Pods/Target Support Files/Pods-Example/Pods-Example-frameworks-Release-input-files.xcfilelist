@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh
+${BUILT_PRODUCTS_DIR}/LXMRow/LXMRow.framework
+${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
+${BUILT_PRODUCTS_DIR}/libextobjc/libextobjc.framework
