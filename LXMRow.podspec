@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "LXMRow"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "UI 脚手架"
   spec.description  = <<-DESC
                       UITableView 和 UICollectionView 的脚手架
