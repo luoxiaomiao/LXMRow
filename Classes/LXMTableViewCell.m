@@ -10,9 +10,9 @@
 
 @implementation LXMTableViewCell
 
-+ (instancetype)dequeueCellWithTableView:(UITableView *)tableView {
++ (instancetype)dequeueCellWithTableView:(UITableView *)tableView forIndexPath:(NSIndexPath *)indexPath {
     [tableView registerClass:self forCellReuseIdentifier:NSStringFromClass(self)];
-    LXMTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(self)];
+    LXMTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(self) forIndexPath:indexPath];
     return cell;
 }
 

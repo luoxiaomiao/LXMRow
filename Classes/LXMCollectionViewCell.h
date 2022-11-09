@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 复用
 /// @param collectionView 集合视图
 /// @param indexPath 序号
-+ (instancetype)dequeueCellWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath;
++ (instancetype)dequeueCellWithCollectionView:(UICollectionView *)collectionView forIndexPath:(NSIndexPath *)indexPath;
 
 /// 初始化配置；供子类重写
 - (void)install;

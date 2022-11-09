@@ -10,7 +10,7 @@
 
 @implementation LXMCollectionViewCell
 
-+ (instancetype)dequeueCellWithCollectionView:(UICollectionView *)collectionView indexPath:(nonnull NSIndexPath *)indexPath {
++ (instancetype)dequeueCellWithCollectionView:(UICollectionView *)collectionView forIndexPath:(nonnull NSIndexPath *)indexPath {
     [collectionView registerClass:self forCellWithReuseIdentifier:NSStringFromClass(self)];
     return [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(self) forIndexPath:indexPath];
 }

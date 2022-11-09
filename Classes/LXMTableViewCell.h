@@ -19,7 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 复用
 /// @param tableView 列表视图
-+ (instancetype)dequeueCellWithTableView:(UITableView *)tableView;
+/// @param indexPath 序号
++ (instancetype)dequeueCellWithTableView:(UITableView *)tableView forIndexPath:(NSIndexPath *)indexPath;
 
 /// 初始化配置；供子类重写
 - (void)install;

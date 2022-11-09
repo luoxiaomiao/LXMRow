@@ -54,13 +54,14 @@
     [self addYellowCell];
     [self addSpaceCellWithHeight:10 color:UIColor.clearColor];
     [self addBlueCell];
+    [self.tableView reloadData];
 }
 
 - (void)addYellowCell {
     @weakify(self);
     LXMTableSection *sec = [LXMTableSection section];
     LXMTableRow *row = [LXMTableRow rowWithHeight:[YellowCell expectHeight:nil] creatCell:^UITableViewCell * _Nonnull(UITableView * _Nonnull tableView, NSIndexPath * _Nonnull indexPath) {
-        YellowCell *cell = [YellowCell dequeueCellWithTableView:tableView];
+        YellowCell *cell = [YellowCell dequeueCellWithTableView:tableView forIndexPath:indexPath];
         return cell;
     }];
     
@@ -79,7 +80,7 @@
     @weakify(self);
     LXMTableSection *sec = [LXMTableSection section];
     LXMTableRow *row = [LXMTableRow rowWithHeight:[BlueCell expectHeight:nil] creatCell:^UITableViewCell * _Nonnull(UITableView * _Nonnull tableView, NSIndexPath * _Nonnull indexPath) {
-        BlueCell *cell = [BlueCell dequeueCellWithTableView:tableView];
+        BlueCell *cell = [BlueCell dequeueCellWithTableView:tableView forIndexPath:indexPath];
         return cell;
     }];
     
@@ -98,7 +99,7 @@
 - (void)addSpaceCellWithHeight:(CGFloat)height color:(UIColor *)color {
     LXMTableSection *sec = [LXMTableSection section];
     LXMTableRow *row = [LXMTableRow rowWithHeight:height creatCell:^UITableViewCell * _Nonnull(UITableView * _Nonnull tableView, NSIndexPath * _Nonnull indexPath) {
-        LXMTableViewCell *cell = [LXMTableViewCell dequeueCellWithTableView:tableView];
+        LXMTableViewCell *cell = [LXMTableViewCell dequeueCellWithTableView:tableView forIndexPath:indexPath];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.backgroundColor = color;
         return cell;
