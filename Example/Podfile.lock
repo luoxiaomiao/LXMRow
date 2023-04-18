@@ -34,7 +34,7 @@ PODS:
     - libextobjc/RuntimeExtensions
   - libextobjc/RuntimeExtensions (0.6)
   - libextobjc/UmbrellaHeader (0.6)
-  - LXMRow (1.0.0)
+  - LXMRow (1.0.1)
   - Masonry (1.1.0)
 
 DEPENDENCIES:
@@ -53,9 +53,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   libextobjc: aed8b7d2b07f511c1a7ecaacb33ea03e327c69b7
-  LXMRow: 97818d8b12fa8690e835319ee6fd65256c554789
+  LXMRow: 2ae5f5fd06b324b304d06ee1b14195725deb4eac
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: 5c00a3e170c4a26fa7eb6e7b2fa158f3a83986ab
+PODFILE CHECKSUM: 0c780f7e57526f0dc94b2cab9c9fa3b2a9a8f9e2
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.3
